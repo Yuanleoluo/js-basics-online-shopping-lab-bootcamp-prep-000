@@ -28,7 +28,7 @@ function viewCart() {
         console.log(`In your cart, you have ${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}
                     and ${Object.keys(cart[i+1])} at $${cart[i+1][Object.keys(cart[i+1])]}`)
       } else if {cart.length===3){
-        c.push(`In your cart, you have ${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]},
+        console.log(`In your cart, you have ${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]},
                 ${Object.keys(cart[i+1])} at $${cart[i][Object.keys(cart[i+1])]},
                 and ${Object.keys(cart[i+2])} at $${cart[i][Object.keys(cart[i+2])]}`)
       }
