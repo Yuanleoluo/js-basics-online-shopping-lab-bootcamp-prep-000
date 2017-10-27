@@ -31,6 +31,8 @@ function viewCart() {
         c.push(` ${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]},`)
       }
     }
+    process.stdout.write("hello: ")
+    process.stdout.write("my name is leo ")
     console.log(c.join(''))
   }
 
