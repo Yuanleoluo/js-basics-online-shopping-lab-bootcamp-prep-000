@@ -27,7 +27,7 @@ function viewCart() {
     }
 // write your code here
     }
-    console.log(c.join(' '))
+    console.log(c.join(''))
   }
 
 function total() {
