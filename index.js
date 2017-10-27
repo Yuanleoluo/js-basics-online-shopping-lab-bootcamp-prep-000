@@ -24,10 +24,10 @@ function viewCart() {
     for (let i=0; i<cart.length; i++){
       if (cart.length===1) {
         console.log(`In your cart, you have ${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}.`)
-      } else if (cart.length===2){
+      } elseif (cart.length===2){
         console.log(`In your cart, you have ${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}
                     and ${Object.keys(cart[i+1])} at $${cart[i+1][Object.keys(cart[i+1])]}`)
-      } else if {cart.length===3){
+      } else {
         console.log(`In your cart, you have ${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]},
                 ${Object.keys(cart[i+1])} at $${cart[i][Object.keys(cart[i+1])]},
                 and ${Object.keys(cart[i+2])} at $${cart[i][Object.keys(cart[i+2])]}`)
