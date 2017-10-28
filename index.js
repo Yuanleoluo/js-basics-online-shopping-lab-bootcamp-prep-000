@@ -27,7 +27,7 @@ function viewCart() {
         c.push(`${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}.`)
       } else if (cart.length > 1 && i === (cart.length-1)){
         c.push(`and ${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}.`)
-      } else if (cart.length > 1 && i < (cart.length-1) && cart !== 2){
+      } else if (cart.length > 1 && i < (cart.length-1) && cart != 2){
         c.push(`${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}, `)
       } else {
         c.push(`${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]} `)
