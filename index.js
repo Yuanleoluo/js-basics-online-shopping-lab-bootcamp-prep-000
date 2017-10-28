@@ -23,7 +23,15 @@ function viewCart() {
     console.log("Your shopping cart is empty.")
   } else {
     for (let i = 0; i < cart.length; i++){
+      if (cart.length === 1){
         c.push(`${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}.`)
+      } else if (cart.length > 1 && i === (cart.length-1){
+        c.push(`and ${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}.`)
+      } else if (cart.length >1 && i < (cart.length-1)){
+        c.push(`${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}, `)
+      } else {
+        c.push(`${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]} `)
+      }
     }
 // write your code here
     }
