@@ -27,10 +27,10 @@ function viewCart() {
         c.push(`${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}.`)
       } else if (cart.length > 1 && i === (cart.length-1)){
         c.push(`and ${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}.`)
-      } else if (cart.length > 1 && i < (cart.length-1) && cart != 2){
-        c.push(`${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}, `)
-      } else {
+      } else if (cart.length === 2 && i < (cart.length-1)){
         c.push(`${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]} `)
+      } else if (cart.length > 1 && i < (cart.length-1)) {
+        c.push(`${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}, `)
       }
     }
 // write your code here
