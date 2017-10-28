@@ -25,7 +25,7 @@ function viewCart() {
     for (let i = 0; i < cart.length; i++){
       if (cart.length === 1){
         c.push(`${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}.`)
-      } else if (cart.length > 1 && i === (cart.length-1){
+      } else if (cart.length > 1 && i === (cart.length-1)){
         c.push(`and ${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}.`)
       } else if (cart.length >1 && i < (cart.length-1)){
         c.push(`${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}, `)
