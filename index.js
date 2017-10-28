@@ -53,12 +53,11 @@ function removeFromCart(item) {
       delete cart[i].item
       return cart
     }
-    }
+  }
     console.log("That item is not in your cart.")
     return cart
   }
   // write your code here
-}
 
 function placeOrder(cardNumber) {
   // write your code here
